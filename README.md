@@ -27,6 +27,4 @@ Your app is ready to be packed!
 
 ## How it works
 
-<video width="100%" controls preload>
-  <source src="./presentation.mp4" type="video/mp4">
-</video>
+<video src="presentation.mp4" width="100%" controls preload></video>
