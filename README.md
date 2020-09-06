@@ -24,7 +24,3 @@ Builds the app for production to the `dist` directory.<br />
 It correctly bundles in production mode and optimizes the build for the best performance.
 
 Your app is ready to be packed!
-
-## How it works
-
-<video src="presentation.mp4" width="100%" controls preload></video>
