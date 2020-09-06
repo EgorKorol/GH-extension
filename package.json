@@ -1,0 +1,41 @@
+{
+  "name": "gh-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "files": "src/popup.html src/background.js src/popup.js src/content.*.js"
+  },
+  "scripts": {
+    "remove-dist": "rm -rf dist",
+    "start": "npm run remove-dist && parcel watch $npm_package_config_files --no-hmr",
+    "build": "npm run remove-dist && parcel build $npm_package_config_files --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EgorKorol/GH-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EgorKorol/GH-extension/issues"
+  },
+  "homepage": "https://github.com/EgorKorol/GH-extension#readme",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.5.0",
+    "sass": "^1.26.10",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "lodash": "^4.17.20",
+    "vue": "^2.6.12"
+  },
+  "staticFiles": {
+    "staticPath": "static",
+    "watcherGlob": "**"
+  }
+}
