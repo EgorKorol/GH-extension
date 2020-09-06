@@ -11,7 +11,7 @@
       <h2>{{ props.title }}</h2>
       <p>SKU: {{ props.sku }}</p>
       <div>
-        <span v-if="props.price.formattedValue">
+        <span v-if="props.price.value">
           {{ props.price.formattedValue }}
         </span>
         ×
